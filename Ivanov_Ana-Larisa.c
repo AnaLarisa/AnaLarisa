@@ -186,7 +186,7 @@ int main()
 	
 	inaltime(rad);
 	nr_pagini(rad,0);
-	printf("%d %d", h, pagini);
+	printf("%d %d", h, pagini);//byeeee
 
     return 0;
 }
