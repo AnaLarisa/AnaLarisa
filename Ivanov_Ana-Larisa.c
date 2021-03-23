@@ -133,7 +133,7 @@ Pagina* insereaza(Pagina *pag, char *x, Nod *nod)
 	return pag;
 }
 
-/*void afisare(Pagina *p, int nivel){
+void afisare(Pagina *p, int nivel){
     int i;
     
     if(p != NULL)
@@ -146,7 +146,7 @@ Pagina* insereaza(Pagina *pag, char *x, Nod *nod)
         for(i = 1; i <= p->m; i++)
             afisare(p->e[i].p, nivel + 1);
     }
-}*/
+}
 
 void inaltime(Pagina *p){
 	if(p==NULL)
@@ -182,7 +182,8 @@ int main()
         rad = insereaza(rad, s, NULL);
     }
 
-    //afisare(rad, 0);
+    afisare(rad, 0);
+	
 	inaltime(rad);
 	nr_pagini(rad,0);
 	printf("%d %d", h, pagini);
